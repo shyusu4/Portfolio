@@ -7,8 +7,19 @@
 }
 
 body {
-  background: #191765;
+  background: var(--primary-color);
   font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --primary-color: #191765;
+  --primary-2-color: #7d73fc;
+  --primary-3-color: #9490ff;
+  --secondary-color: #c8c8d4;
+  --secondary-2-color: #dcdce8;
+  --secondary-3-color: #edecff;
+  --white-color: #fff;
+  --gray-color: #646369;
 }
 
 /* header */
@@ -25,17 +36,77 @@ a {
   text-decoration: none;
 }
 
-.name {
+.logo-name {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
   color: #fff;
 }
 
 .union {
   max-width: 100%;
-  height: 25px;
+  height: 20px;
 }
 
 .union:hover {
   cursor: pointer;
+}
+
+/* headline */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.box {
+  text-align: center;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--primary-2-color);
+}
+
+.title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  margin-top: 1rem;
+  color: var(--secondary-3-color);
+}
+
+.description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--secondary-color);
+}
+
+hr {
+  border: none;
+  height: 1.5px;
+  width: 300px;
+  margin: auto;
+  color: var(--gray-color);
+  background-color: var(--gray-color);
+  display: flex;
+}
+
+.languages,
+.frameworks,
+.skills {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--primary-3-color);
+}
+
+.abilities p {
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--secondary-3-color);
 }
