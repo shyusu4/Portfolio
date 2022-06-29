@@ -1,17 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-body {
-  background: #191765;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header-section {
-  height: 92px;
-  border: 2px solid aliceblue;
-  align-items: baseline;
+body {
+  background: #191765;
+  font-family: "Roboto", sans-serif;
 }
+
+/* header */
 
 .navbar {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 4rem;
 }
 
 a {
@@ -19,15 +26,16 @@ a {
 }
 
 .name {
-  padding: 10px 12px;
-  width: px;
-  height: 36px;
-  top: calc(50% - 36px / 2);
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 18px;
-  line-height: 16px;
-  align-items: center;
-  text-align: center;
   color: #fff;
+}
+
+.union {
+  max-width: 100%;
+  height: 25px;
+}
+
+.union:hover {
+  cursor: pointer;
 }
