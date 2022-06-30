@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--primary-color);
+  background-image: url("imgs/Top circles.png");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: 100% 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --primary-color: #191765;
+  --primary-2-color: #7d73fc;
+  --primary-3-color: #9490ff;
+  --secondary-color: #c8c8d4;
+  --secondary-2-color: #dcdce8;
+  --secondary-3-color: #edecff;
+  --white-color: #fff;
+  --gray-color: #646369;
+}
+
+/* header */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 6rem;
+}
+
+.navbar-items {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo-name {
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+}
+
+.union {
+  max-width: 100%;
+  height: 20px;
+}
+
+.union:hover {
+  cursor: pointer;
+}
+
+/* headline */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.box {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--primary-2-color);
+}
+
+.title {
+  font-weight: 500;
+  font-size: 32px;
+  margin-top: 1rem;
+  color: var(--secondary-3-color);
+}
+
+.description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--secondary-color);
+}
+
+hr {
+  border: none;
+  height: 1.5px;
+  width: 320px;
+  margin: auto;
+  color: var(--gray-color);
+  background-color: var(--gray-color);
+}
+
+.abilities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--primary-3-color);
+}
+
+.abilities p {
+  font-weight: 400;
+  padding: 12px 12px 0 0;
+  color: var(--secondary-3-color);
+}
+
+.social-media ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  list-style: none;
+}
+
+.github {
+  padding-right: 10px;
+  width: 30px;
+  height: 23px;
+}
