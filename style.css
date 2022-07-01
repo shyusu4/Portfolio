@@ -24,7 +24,7 @@ body {
 }
 
 .homepage {
-  background-image: url("imgs/Top circles.png");
+  background-image: url("imgs/top-circles.png");
   background-repeat: no-repeat;
   background-position: 0% 0%;
   background-size: 100% 100%;
@@ -163,7 +163,7 @@ h3 {
 }
 
 .my-work {
-  background-image: url("imgs/Bottom circles.png");
+  background-image: url("imgs/bottom-circles.png");
   background-repeat: no-repeat;
   background-position: 0% 0%;
   background-size: 100% 100%;
