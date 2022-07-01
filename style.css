@@ -211,7 +211,7 @@ h3 {
   color: var(--gray-color);
 }
 
-button {
+.button {
   background-color: var(--primary-2-color);
   color: var(--white-color);
   transition: 200ms;
@@ -223,7 +223,7 @@ button {
   font-size: 15px;
 }
 
-button:hover {
+.button:hover {
   background-color: var(--primary-2-color);
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
   cursor: pointer;
@@ -242,6 +242,6 @@ a:visited {
   color: var(--white-color);
 }
 
-button:active {
+.button:active {
   background-color: #5e42d7;
 }
