@@ -264,6 +264,10 @@ textarea {
   resize: vertical;
 }
 
+textarea {
+  height: 150px;
+}
+
 .contact-me {
   display: flex;
   flex-direction: column;
