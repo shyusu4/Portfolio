@@ -192,65 +192,69 @@
         </div>
       </div>
     </section>
-    <section class="contact-me">
+
+    <footer class="contact-me">
       <h4>CONTACT ME</h4>
       <p class="description-2">
         If you have an application you are interested in developing, a feature
         that you need built or a project that needs coding. I'd love to help
         with it.
       </p>
-      <form action="action_page.php" id="form">
+      <form action="https://formspree.io/f/mqknvele" method="POST">
         <ul class="form-fields">
-          <li class="form-field">
+          <li>
             <input
               type="text"
-              id="fname"
-              name="firstname"
+              name="name"
+              maxlength="30"
               placeholder="Enter name"
+              required
             />
           </li>
-          <li class="form-field">
+          <li>
             <input
-              type="text"
-              id="lname"
-              name="lastname"
+              type="email"
+              name="email"
               placeholder="Enter email"
+              required
             />
           </li>
-          <li class="form-field">
+          <li>
             <textarea
-              id="subject"
-              name="subject"
+              maxlength="500"
+              name="message"
               placeholder="Enter text here"
+              required
             ></textarea>
           </li>
+          <button class="submit-button" type="submit">Submit</button>
         </ul>
       </form>
-      <a href="#form" class="button">Submit</a>
-    </section>
-    <footer class="footer">
       <hr />
-      <ul>
-        <li>
-          <a href="https://github.com/shyusu4"
-            ><img src="imgs/github.svg" alt="github icon" class="github"
-          /></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/shakhrizoda-yusupova-789253229/"
-            ><img src="imgs/linkedin.svg" alt="linkedin icon"
-          /></a>
-        </li>
-        <li>
-          <a href="#"><img src="imgs/angelist.svg" alt="angelist icon" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="imgs/twitter.svg" alt="twitter icon" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="imgs/medium.svg" alt="medium icon" /></a>
-        </li>
-      </ul>
+      <section class="social-media">
+        <ul>
+          <li>
+            <a href="https://github.com/shyusu4"
+              ><img src="imgs/github.svg" alt="github icon" class="github"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/shakhrizoda-yusupova-789253229/"
+              ><img src="imgs/linkedin.svg" alt="linkedin icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"><img src="imgs/angelist.svg" alt="angelist icon" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="imgs/twitter.svg" alt="twitter icon" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="imgs/medium.svg" alt="medium icon" /></a>
+          </li>
+        </ul>
+      </section>
       <p>shyusupova4@gmail.com</p>
     </footer>
   </body>
