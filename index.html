@@ -25,24 +25,30 @@
             <li class="item"><a href="#">Portfolio</a></li>
             <li class="item"><a href="#">About</a></li>
             <li class="item"><a href="#">Contact</a></li>
+            <li class="item">
+              <img src="imgs/email-icon.svg" alt="email icon" />
+            </li>
           </ul>
         </nav>
       </header>
       <section class="headline">
         <!-- About me -->
-        <h1 class="name">Shakhrizoda Yusupova</h1>
-        <h2 class="title">Software Developer</h2>
-        <p class="description">
-          I can help you build a product, feature or website. Look through some
-          of my work and experience! If you like what you see and have a project
-          you need coded, don't hestiate to contact me.
-        </p>
-        <hr />
+        <div class="container">
+          <h1 class="name">Shakhrizoda Yusupova</h1>
+          <h2 class="title">Software Developer</h2>
+          <p class="description">
+            I can help you build a product, feature or website. Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don't hestiate to contact me.
+          </p>
+        </div>
         <!-- Technical abilities -->
+        <hr />
         <section class="grid-container abilities">
           <div class="grid-item">
             <h4>Languages</h4>
             <p>Javascript</p>
+            <p>Ruby</p>
             <p>HTML</p>
             <p>CSS</p>
           </div>
@@ -51,6 +57,8 @@
             <p>Bootstrap</p>
             <p>Ruby on Rails</p>
             <p>RSPec</p>
+            <p>CapyBara</p>
+            <p>Selenium</p>
           </div>
           <div class="grid-item">
             <h4>Skills</h4>
@@ -58,13 +66,18 @@
             <p>Github</p>
             <p>Codepen</p>
             <p>Codekit</p>
+            <p>Terminal</p>
           </div>
         </section>
+        <hr />
       </section>
     </main>
-    <hr />
     <!-- Social media links -->
     <section class="social-media">
+      <div class="work">
+        <p>Work</p>
+        <img src="imgs/group55.svg" alt="arrow icon" class="arrow" />
+      </div>
       <ul>
         <li>
           <a href="https://github.com/shyusu4"
@@ -87,7 +100,7 @@
         </li>
       </ul>
       <div class="work">
-        <img src="imgs/group55.svg" alt="medium icon" class="arrow" />
+        <img src="imgs/group55.svg" alt="arrow icon" class="arrow" />
         <p>Work</p>
       </div>
     </section>
@@ -96,7 +109,7 @@
       <h3>MY RECENT WORK</h3>
       <hr />
       <div class="flex-container">
-        <div class="flex-item" id="flex-item-1">
+        <div class="flex-item-style-1" id="flex-item-1">
           <img
             src="imgs/img-placeholder.svg"
             alt="multi-post stories project"
@@ -110,6 +123,7 @@
               ever since the 1500s, when an unknown printer took a standard
               dummy text.
             </p>
+
             <ul class="tags">
               <li><span>css</span></li>
               <li><span>html</span></li>
@@ -119,7 +133,7 @@
             <a href="#flex-item-1" class="button">See Project</a>
           </div>
         </div>
-        <div class="flex-item" id="flex-item-2">
+        <div class="flex-item-style-2" id="flex-item-2">
           <img
             src="imgs/img-placeholder.svg"
             alt="multi-post stories project"
@@ -142,7 +156,7 @@
             <a href="#flex-item-2" class="button">See Project</a>
           </div>
         </div>
-        <div class="flex-item" id="flex-item-3">
+        <div class="flex-item-style-1" id="flex-item-3">
           <img
             src="imgs/img-placeholder.svg"
             alt="multi-post stories project"
@@ -165,7 +179,7 @@
             <a href="#flex-item-3" class="button">See Project</a>
           </div>
         </div>
-        <div class="flex-item" id="flex-item-4">
+        <div class="flex-item-style-2" id="flex-item-4">
           <img
             src="imgs/img-placeholder.svg"
             alt="multi-post stories project"
@@ -228,7 +242,6 @@
           <li><button class="button" type="submit">Submit</button></li>
         </ul>
       </form>
-      <hr />
       <!-- Social media links -->
       <section class="social-media">
         <ul>

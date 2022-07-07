@@ -100,6 +100,7 @@ hr {
 .title {
   font-weight: 500;
   font-size: 32px;
+  text-align: center;
   margin-top: 1rem;
   color: var(--secondary-3-color);
 }
@@ -139,14 +140,13 @@ hr {
 
 .social-media ul {
   display: flex;
-  align-items: center;
   justify-content: center;
   padding-top: 2rem;
   list-style: none;
 }
 
 .social-media li {
-  padding: 3px;
+  padding: 0.1rem;
 }
 
 .work {
@@ -197,7 +197,6 @@ hr {
 }
 
 .tags {
-  float: left;
   padding: 1rem 0 2rem 0;
 }
 
@@ -262,4 +261,100 @@ textarea {
 textarea {
   font-family: "Roboto", sans-serif;
   height: 150px;
+}
+
+/* desktop styles */
+
+@media screen and (min-width: 768px) {
+  .union {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background: none;
+    z-index: 2;
+  }
+  .navbar-items {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    margin-right: 10rem;
+    color: var(--white-color);
+  }
+  .item a {
+    text-decoration: none;
+    color: var(--white-color);
+  }
+  .logo-name {
+    font-size: 20px;
+    margin-left: 10rem;
+  }
+  .headline {
+    margin: 0 30rem;
+  }
+  .container {
+    margin-top: 10rem;
+  }
+  .title {
+    margin-bottom: 6rem;
+  }
+  .description {
+    padding: 1rem;
+  }
+  hr {
+    width: 30rem;
+  }
+  .abilities {
+    grid-template-columns: 18fr 20fr 10fr;
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 5rem;
+    width: 100%;
+    height: 100px;
+  }
+  .my-work {
+    margin: 15rem 5rem;
+  }
+  .my-work h3 {
+    width: 100%;
+  }
+  .my-work hr {
+    width: 100%;
+  }
+  .flex-container {
+    width: 100%;
+  }
+  .flex-item-style-1 img {
+    float: left;
+    max-width: 50%;
+  }
+  .flex-item-style-2 img {
+    float: right;
+    max-width: 50%;
+  }
+  .project {
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .project-info {
+    margin: 1rem 3rem 1rem 1rem;
+    float: right;
+    width: 40%;
+    height: 70vh;
+  }
+  .project-description {
+    font-size: 20px;
+    width: 28rem;
+  }
+  .description-2 {
+    width: 45%;
+  }
 }
