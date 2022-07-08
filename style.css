@@ -31,9 +31,9 @@ body {
 .button {
   background-color: var(--primary-2-color);
   color: var(--white-color);
-  transition: 200ms;
+  transition: 200ms ease-out;
   border: none;
-  padding: 16px 10px;
+  padding: 0.7rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -48,7 +48,7 @@ body {
 hr {
   border: none;
   height: 1.5px;
-  width: 320px;
+  width: 90%;
   margin: auto;
   color: var(--gray-color);
   background-color: var(--gray-color);
@@ -60,8 +60,8 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  height: 6rem;
+  padding: 3%;
+  height: 6%;
 }
 
 .navbar-items {
@@ -74,11 +74,6 @@ hr {
   color: var(--white-color);
 }
 
-.union {
-  max-width: 100%;
-  height: 45px;
-}
-
 .union:hover {
   cursor: pointer;
 }
@@ -86,8 +81,7 @@ hr {
 .headline {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 2rem;
+  justify-self: center;
 }
 
 .name {
@@ -101,7 +95,7 @@ hr {
   font-weight: 500;
   font-size: 32px;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 2%;
   color: var(--secondary-3-color);
 }
 
@@ -110,8 +104,8 @@ hr {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
   color: var(--secondary-color);
 }
 
@@ -173,7 +167,12 @@ hr {
   display: flex;
   flex-direction: column;
   align-content: center;
-  padding: 2rem;
+}
+
+.flex-item-style-1,
+.flex-item-style-2 {
+  width: 95%;
+  padding-top: 5%;
 }
 
 .my-work-img {
@@ -188,7 +187,7 @@ hr {
 }
 
 .project-info {
-  padding: 3rem 0 2rem 0;
+  padding: 10%;
 }
 
 .project-description {
@@ -222,7 +221,7 @@ hr {
   font-weight: bold;
   font-size: 40px;
   color: var(--primary-3-color);
-  padding-top: 3rem;
+  padding-top: 3%;
 }
 
 .contact-me p {
@@ -244,7 +243,7 @@ hr {
   flex-direction: column;
   align-items: center;
   list-style: none;
-  padding: 2rem 0 1rem 0;
+  padding: 2% 0 1% 0;
 }
 
 input,
@@ -266,9 +265,16 @@ textarea {
 /* desktop styles */
 
 @media screen and (min-width: 768px) {
+  /* main {
+    background-image: url(imgs/circles-header.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  } */
+
   .union {
     display: none;
   }
+
   .navbar {
     display: flex;
     width: 100%;
@@ -277,84 +283,74 @@ textarea {
     background: none;
     z-index: 2;
   }
+
   .navbar-items {
     display: flex;
     gap: 3rem;
     list-style: none;
-    margin-right: 10rem;
+    margin-right: 5rem;
     color: var(--white-color);
   }
+
   .item a {
     text-decoration: none;
     color: var(--white-color);
   }
+
   .logo-name {
     font-size: 20px;
-    margin-left: 10rem;
+    margin-left: 5rem;
   }
+
   .headline {
-    margin: 0 30rem;
+    margin: 3%;
   }
+
   .container {
     margin-top: 10rem;
   }
+
   .title {
     margin-bottom: 6rem;
   }
-  .description {
-    padding: 1rem;
-  }
-  hr {
-    width: 30rem;
-  }
+
   .abilities {
     grid-template-columns: 18fr 20fr 10fr;
   }
+
   .social-media {
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    margin-top: 5rem;
+    margin-top: 5%;
     width: 100%;
     height: 100px;
   }
+
   .my-work {
-    margin: 15rem 5rem;
+    margin: 15% 5%;
   }
+
   .my-work h3 {
     width: 100%;
   }
-  .my-work hr {
-    width: 100%;
-  }
-  .flex-container {
-    width: 100%;
-  }
+
   .flex-item-style-1 img {
-    float: left;
-    max-width: 50%;
+    width: 40%;
   }
+
   .flex-item-style-2 img {
     float: right;
-    max-width: 50%;
-  }
-  .project {
-    display: flex;
-    flex-direction: row;
-    font-size: 40px;
-    font-weight: bold;
-  }
-  .project-info {
-    margin: 1rem 3rem 1rem 1rem;
-    float: right;
     width: 40%;
-    height: 70vh;
   }
-  .project-description {
-    font-size: 20px;
-    width: 28rem;
+
+  .project-info-1 {
+    float: right;
+    width: 50%;
   }
-  .description-2 {
-    width: 45%;
+
+  .project-info-2 {
+    float: left;
+    width: 50%;
   }
 }
