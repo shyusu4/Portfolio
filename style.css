@@ -89,6 +89,26 @@ hr {
   font-size: 48px;
   text-align: center;
   color: var(--primary-2-color);
+  animation-duration: 4s;
+  animation-name: name-slide;
+}
+
+@keyframes name-slide {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .title {
