@@ -33,7 +33,7 @@ body {
   color: var(--white-color);
   transition: 200ms ease-out;
   border: none;
-  padding: 16px 10px;
+  padding: 0.7rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -48,7 +48,7 @@ body {
 hr {
   border: none;
   height: 1.5px;
-  width: 320px;
+  width: 90%;
   margin: auto;
   color: var(--gray-color);
   background-color: var(--gray-color);
@@ -60,8 +60,8 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  height: 6rem;
+  padding: 3%;
+  height: 6%;
 }
 
 .navbar-items {
@@ -72,11 +72,6 @@ hr {
   font-weight: 500;
   font-size: 25px;
   color: var(--white-color);
-}
-
-.union {
-  max-width: 100%;
-  height: 45px;
 }
 
 .union:hover {
@@ -99,6 +94,26 @@ hr {
   font-size: 48px;
   text-align: center;
   color: var(--primary-2-color);
+  animation-duration: 4s;
+  animation-name: name-slide;
+}
+
+@keyframes name-slide {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 @keyframes name-slide {
@@ -117,7 +132,7 @@ hr {
   font-weight: 500;
   font-size: 32px;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 2%;
   color: var(--secondary-3-color);
   animation-duration: 2.5s;
   animation-name: name-slide;
@@ -128,8 +143,8 @@ hr {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
   color: var(--secondary-color);
 }
 
@@ -203,7 +218,12 @@ hr {
   display: flex;
   flex-direction: column;
   align-content: center;
-  padding: 2rem;
+}
+
+.flex-item-style-1,
+.flex-item-style-2 {
+  width: 95%;
+  padding-top: 5%;
 }
 
 .flex-item-style-1,
@@ -223,7 +243,7 @@ hr {
 }
 
 .project-info {
-  padding: 3rem 0 2rem 0;
+  padding: 10%;
 }
 
 .project-description {
@@ -257,7 +277,7 @@ hr {
   font-weight: bold;
   font-size: 40px;
   color: var(--primary-3-color);
-  padding-top: 3rem;
+  padding-top: 3%;
 }
 
 .contact-me p {
@@ -279,7 +299,7 @@ hr {
   flex-direction: column;
   align-items: center;
   list-style: none;
-  padding: 2rem 0 1rem 0;
+  padding: 2% 0 1% 0;
 }
 
 input,
@@ -301,10 +321,16 @@ textarea {
 /* desktop styles */
 
 @media screen and (min-width: 768px) {
+  /* main {
+    background-image: url(imgs/circles-header.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  } */
+
   .union {
     display: none;
   }
-
+  
   .headline {
     background-image: url(imgs/two-circles-header.png);
     background-position: center center;
@@ -342,7 +368,6 @@ textarea {
 
   hr {
     width: 30rem;
-  }
 
   .abilities {
     grid-template-columns: 18fr 20fr 10fr;
@@ -384,12 +409,16 @@ textarea {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% auto;
+    }
+
+  .my-work {
+    margin: 15% 5%;
   }
 
   .my-work h3 {
     width: 100%;
   }
-
+  
   .my-work hr {
     width: 100%;
   }
@@ -403,7 +432,7 @@ textarea {
   .flex-item-style-1 img {
     float: left;
     max-width: 45%;
-  }
+    }
 
   .flex-item-style-2 img {
     float: right;
@@ -434,6 +463,6 @@ textarea {
   }
 
   .description-2 {
-    width: 50%;
+    width: 40%;
   }
 }

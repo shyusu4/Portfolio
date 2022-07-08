@@ -16,7 +16,7 @@ Mobile website built using template chosen.
 👤 Shakhrizoda Yusupova
 
 - GitHub: [@shyusu4](https://github.com/shyusu4)
-- LinkedIn: (www.linkedin.com/in/shakhrizoda-yusupova-789253229)
+- LinkedIn: [Shakhrizoda Yusupova](https://www.linkedin.com/in/shakhrizoda-yusupova-789253229/?originalSubdomain=uz)
 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
