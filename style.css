@@ -218,17 +218,13 @@ hr {
   display: flex;
   flex-direction: column;
   align-content: center;
+  padding-left: 5%;
 }
 
 .flex-item-style-1,
 .flex-item-style-2 {
   width: 95%;
   padding-top: 5%;
-}
-
-.flex-item-style-1,
-.flex-item-style-2 {
-  padding-bottom: 7%;
 }
 
 .my-work-img {
@@ -321,11 +317,10 @@ textarea {
 /* desktop styles */
 
 @media screen and (min-width: 768px) {
-  
   .union {
     display: none;
   }
-  
+
   .headline {
     background-image: url(imgs/two-circles-header.png);
     background-position: center center;
@@ -405,16 +400,12 @@ textarea {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    }
-
-  .my-work {
-    margin: 15% 5%;
   }
 
   .my-work h3 {
     width: 100%;
   }
-  
+
   .my-work hr {
     width: 100%;
   }
@@ -428,7 +419,7 @@ textarea {
   .flex-item-style-1 img {
     float: left;
     max-width: 45%;
-    }
+  }
 
   .flex-item-style-2 img {
     float: right;
