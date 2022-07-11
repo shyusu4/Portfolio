@@ -21,7 +21,7 @@ Mobile website built using template chosen.
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page.](https://github.com/shyusu4/Hello-Microverse/issues)
+Feel free to check the [issues page.](https://github.com/shyusu4/Portfolio/issues)
 
 ## Show your support
 Give a ⭐️ if you like this project!
