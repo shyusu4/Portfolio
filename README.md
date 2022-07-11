@@ -9,7 +9,7 @@ Mobile website built using template chosen.
 - CSS
 
 # Live Demo
-[Shakhrizoda's Portfolio](https://shyusu4.github.io/Portfolio/)
+[Live Demo](https://shyusu4.github.io/Portfolio/)
 
 ## Authors
 
