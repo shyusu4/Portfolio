@@ -309,6 +309,10 @@ textarea {
   resize: vertical;
 }
 
+input:focus {
+  border: 1px solid #fff;
+}
+
 textarea {
   font-family: "Roboto", sans-serif;
   height: 150px;
