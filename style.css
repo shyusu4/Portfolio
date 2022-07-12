@@ -298,6 +298,11 @@ hr {
   padding: 2% 0 1% 0;
 }
 
+label {
+  visibility: hidden;
+  display: none;
+}
+
 input,
 textarea {
   width: 20rem;
@@ -309,14 +314,14 @@ textarea {
   resize: vertical;
 }
 
-input:focus,
-textarea:focus {
-  border: 1px solid black;
-}
-
 textarea {
   font-family: "Roboto", sans-serif;
   height: 150px;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid black;
 }
 
 /* desktop styles */
