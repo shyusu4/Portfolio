@@ -74,8 +74,8 @@ hr {
   color: var(--white-color);
 }
 
-.union:hover {
-  cursor: pointer;
+.nav-menu__icon {
+  color: var(--white-color);
 }
 
 .headline {
@@ -327,7 +327,7 @@ textarea:focus {
 /* desktop styles */
 
 @media screen and (min-width: 768px) {
-  .union {
+  .nav-menu__icon {
     display: none;
   }
 
