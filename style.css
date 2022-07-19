@@ -64,108 +64,98 @@ hr {
   font-weight: 500;
   font-size: 25px;
   color: var(--white-color);
+  margin-left: 1rem;
 }
 
-.menu-icon,
-.close-icon {
-  color: var(--white-color);
+.mobile-nav {
+  margin: 1rem;
+  width: 100%;
+  position: fixed;
 }
 
 .mobile-nav-screen {
-  position:fixed;
+  display: flex;
   width: 100%;
-  left: 0px;
-  top: 0px;
-  z-index:10;
-  display: flex;
-  height:auto;
-  justify-content: start;
-  align-items: center;
-  gap:4px;
-  background: var(--primary-color);
+  z-index: 10;
+  height: auto;
+  gap: 4px;
 }
-.mobile-nav .humburger {
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items:center;
+
+.mobile-nav-screen .humburger {
   position: absolute;
-  left:40px;
   background: inherit;
+  margin-left: 80%;
   width: 20px;
   height: 100%;
   border: none;
   outline: none;
   cursor: pointer;
-
 }
 
 .mobile-nav .humburger span {
+  justify-content: end;
   display: block;
   position: absolute;
   width: 100%;
   height: 2px;
-  background:var(--white-color);
-  transition:
-  transform 0.3s ease-out,
-  opacity 0.1s ease-out;
+  background: var(--white-color);
+  transition: transform 0.3s ease-out, opacity 0.1s ease-out;
 }
+
 .mobile-nav .humburger.active span {
-background:transparent;
+  background: transparent;
 }
+
 .mobile-nav .humburger span::before,
 .mobile-nav .humburger span::after {
-  content:'';
+  content: "";
   position: absolute;
   display: block;
   width: 100%;
   height: 2px;
-  background:var(--white-color);
-  transition:
-  transform 0.3s ease-out,
-  opacity 0.1s ease-out;
+  background: var(--white-color);
+  transition: transform 0.3s ease-out, opacity 0.1s ease-out;
 }
 
-.mobile-nav .humburger span::before{
+.mobile-nav .humburger span::before {
   transform: translateY(8px);
 }
-.mobile-nav .humburger.active span::before{
-  transform: translateY(0px) rotateZ(45deg);
-}
-.mobile-nav .humburger span::after{
-  transform: translateY(-8px);
-}
-.mobile-nav .humburger.active span::after{
-  transform: translateY(0px) rotateZ(-45deg);
-}
-.navbar-menu .mobile-nav-menu{
-display: none;
+
+.mobile-nav .humburger.active span::before {
+  transform: translateY(0) rotateZ(45deg);
 }
 
-.mobile-nav .mobile-nav-menu li a {
-  color:var(--white-color);
-text-decoration: none;
+.mobile-nav .humburger span::after {
+  transform: translateY(-8px);
+}
+
+.mobile-nav .humburger.active span::after {
+  transform: translateY(0) rotateZ(-45deg);
+}
+
+.mobile-nav-menu {
+  display: none;
 }
 
 .mobile-nav .mobile-nav-menu.active {
-  display:flex;
-  flex-direction: column;
-  justify-content:start;
-  align-items:center;
-  position: absolute;
-  gap:50px;
-  top: 40px;
-  left: 0;
-  height: calc(100vh - 50px);
-  width: 100%;
-  background: var(--primary-color);
-}
-
-.items {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  justify-content: start;
+  position: fixed;
+  gap: 3rem;
+  padding: 5rem;
+  top: 0;
+  left: 0;
+  height: calc(200vh - 50px);
+  width: 100%;
+  backdrop-filter: blur(15px);
+  mix-blend-mode: multiply;
+}
+
+.mobile-nav-menu .items .link1 a.active {
+  color: var(--white-color);
+  list-style: none;
+  text-decoration: none;
 }
 
 .headline {
@@ -183,6 +173,7 @@ text-decoration: none;
   font-weight: 700;
   font-size: 48px;
   text-align: center;
+  margin-top: 3rem;
   color: var(--primary-2-color);
   animation-duration: 4s;
   animation-name: name-slide;
@@ -417,23 +408,24 @@ textarea:focus {
 /* desktop styles */
 
 @media screen and (min-width: 768px) {
-  .nav-menu__icon {
+  .mobile-nav {
     display: none;
   }
 
-  .headline {
-    background-image: url(imgs/two-circles-header.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+  .logo-name {
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--white-color);
   }
 
   .navbar {
     display: flex;
+    justify-content: space-between;
     width: 100%;
     height: 100px;
     position: fixed;
     background: none;
+    padding: 2rem;
     z-index: 2;
   }
 
@@ -458,6 +450,13 @@ textarea:focus {
 
   hr {
     width: 30rem;
+  }
+
+  .headline {
+    background-image: url(imgs/two-circles-header.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
   }
 
   .abilities {

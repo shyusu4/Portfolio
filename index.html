@@ -22,7 +22,7 @@
   <body>
     <!-- Navigation bar -->
     <main>
-      <!-- <header class="navbar">
+      <header class="navbar">
         <span class="logo-name">SY</span>
         <nav class="navbar-menu">
           <ul class="navbar-items">
@@ -34,17 +34,23 @@
             </li>
           </ul>
         </nav>
-      </header> -->
+      </header>
 
       <header class="mobile-nav">
-         <div class="mobile-nav-screen">
+        <div class="mobile-nav-screen">
           <p class="mobile-nav__logo-name">SY</p>
-          <button type="button" class="humburger" aria-label="toggle curtain navigation">
+          <button
+            type="button"
+            class="humburger"
+            aria-label="toggle curtain navigation"
+          >
             <span></span>
           </button>
         </div>
         <ul class="mobile-nav-menu">
-          <li class="items"><a href="#portfolio" class="link1">Portfolio</a></li>
+          <li class="items">
+            <a href="#portfolio" class="link1">Portfolio</a>
+          </li>
           <li class="items"><a href="#about" class="link2">About</a></li>
           <li class="items"><a href="#contact" class="link3">Contact</a></li>
         </ul>
@@ -52,7 +58,7 @@
 
       <section class="headline">
         <!-- About me -->
-        <div class="container">
+        <div class="container" id="about">
           <h1 class="name">Shakhrizoda Yusupova</h1>
           <h2 class="title">Software Developer</h2>
           <p class="description">
@@ -128,7 +134,7 @@
       </div>
     </section>
     <!-- Projects Section -->
-    <section class="my-work">
+    <section class="my-work" id="portfolio">
       <h3>MY RECENT WORK</h3>
       <hr />
       <div class="flex-container">
@@ -228,7 +234,7 @@
       </div>
     </section>
     <!-- Footer -->
-    <footer class="contact-me">
+    <footer class="contact-me" id="contact">
       <h4>CONTACT ME</h4>
       <p class="description-2">
         If you have an application you are interested in developing, a feature
