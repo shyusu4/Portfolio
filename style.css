@@ -136,7 +136,7 @@ background:transparent;
   transform: translateY(-8px);
 }
 .mobile-nav .humburger.active span::after{
-  transform: translateY(0px) rotateZ(-45deg);
+  transform: translateZ(0px) rotateZ(-45deg);
 }
 .navbar-menu .mobile-nav-menu{
 display: none;
