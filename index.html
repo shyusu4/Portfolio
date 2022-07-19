@@ -22,19 +22,9 @@
   <body>
     <!-- Navigation bar -->
     <main>
-      <!-- <nav class="toggle-nav">
-        <ul>
-          <i class="fa-solid fa-x"></i>
-          <li class="toggle-nav-item item-1"><a href="#">Portfolio</a></li>
-          <li class="toggle-nav-item item-2"><a href="#">About</a></li>
-          <li class="toggle-nav-item item-3"><a href="#">Contact</a></li>
-        </ul>
-      </nav> -->
-
       <header class="navbar">
         <span class="logo-name">SY</span>
         <nav class="navbar-menu">
-          <i class="fa-solid fa-bars fa-xl nav-menu__icon"></i>
           <ul class="navbar-items">
             <li class="item"><a href="#">Portfolio</a></li>
             <li class="item"><a href="#">About</a></li>
@@ -45,6 +35,21 @@
           </ul>
         </nav>
       </header>
+
+      <header class="mobile-nav">
+        <span class="mobile-nav__logo-name">SY</span>
+        <i class="fa-solid fa-bars fa-xl menu-icon"></i>
+        <div class="mobile-nav-screen">
+          <i class="fa-solid fa-x fa-xl close-icon"></i>
+
+          <ul class="mobile-nav-menu">
+            <li class="items"><a href="#portfolio">Portfolio</a></li>
+            <li class="items"><a href="#about">About</a></li>
+            <li class="items"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+
       <section class="headline">
         <!-- About me -->
         <div class="container">
