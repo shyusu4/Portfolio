@@ -1,18 +1,23 @@
-const mobileNav = document.querySelector("mobile-nav");
-const menuIcon = document.querySelector(".fa-bars");
-const closeIcon = document.querySelector(".fa-x");
-const menuItems = document.querySelectorAll(".items");
+const humburger = document.querySelector('.humburger');
+const navToggle = document.querySelector('.mobile-nav-menu');
+const link1 = document.querySelector('.link1');
+const link2 = document.querySelector('.link2');
+const link3 = document.querySelector('.link3');
 
-menuIcon.addEventListener("click", () => {
-  mobileNav.classList.toggle("active");
-});
+link1.addEventListener('click' , () => {
+  humburger.classList.toggle('active');
+  navToggle.classList.toggle('active');
+})
+link2.addEventListener('click' , () => {
+  humburger.classList.toggle('active');
+  navToggle.classList.toggle('active');
+})
+link3.addEventListener('click' , () => {
+  humburger.classList.toggle('active');
+  navToggle.classList.toggle('active');
+})
 
-closeIcon.addEventListener("click", () => {
-  mobileNav.classList.remove("active");
-});
-
-menuItems.forEach((item) => {
-  item.addEventListener("click", () => {
-    mobileNav.classList.remove("active");
-  });
-});
+humburger.addEventListener('click' , () => {
+  humburger.classList.toggle('active');
+  navToggle.classList.toggle('active');
+})

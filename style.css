@@ -72,23 +72,93 @@ hr {
 }
 
 .mobile-nav-screen {
-  visibility: hidden;
-  position: fixed;
-  background: var(--white-color);
-  backdrop-filter: blur(6px);
-  mix-blend-mode: multiply;
-  top: 0;
+  position:fixed;
   width: 100%;
-  height: 100vh;
+  left: 0px;
+  top: 0px;
+  z-index:10;
+  display: flex;
+  height:auto;
+  justify-content: start;
+  align-items: center;
+  gap:4px;
+  background: var(--primary-color);
+}
+.mobile-nav .humburger {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  position: absolute;
+  left:40px;
+  background: inherit;
+  width: 20px;
+  height: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
 }
 
-.mobile-nav-menu {
-  display: none;
+.mobile-nav .humburger span {
+  display: block;
   position: absolute;
-  top: 50px;
+  width: 100%;
+  height: 2px;
+  background:var(--white-color);
+  transition:
+  transform 0.3s ease-out,
+  opacity 0.1s ease-out;
+}
+.mobile-nav .humburger.active span {
+background:transparent;
+}
+.mobile-nav .humburger span::before,
+.mobile-nav .humburger span::after {
+  content:'';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background:var(--white-color);
+  transition:
+  transform 0.3s ease-out,
+  opacity 0.1s ease-out;
+}
+
+.mobile-nav .humburger span::before{
+  transform: translateY(8px);
+}
+.mobile-nav .humburger.active span::before{
+  transform: translateY(0px) rotateZ(45deg);
+}
+.mobile-nav .humburger span::after{
+  transform: translateY(-8px);
+}
+.mobile-nav .humburger.active span::after{
+  transform: translateY(0px) rotateZ(-45deg);
+}
+.navbar-menu .mobile-nav-menu{
+display: none;
+}
+
+.mobile-nav .mobile-nav-menu li a {
+  color:var(--white-color);
+text-decoration: none;
+}
+
+.mobile-nav .mobile-nav-menu.active {
+  display:flex;
+  flex-direction: column;
+  justify-content:start;
+  align-items:center;
+  position: absolute;
+  gap:50px;
+  top: 40px;
   left: 0;
   height: calc(100vh - 50px);
   width: 100%;
+  background: var(--primary-color);
 }
 
 .items {
