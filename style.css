@@ -647,11 +647,15 @@ textarea:focus {
   }
 
   .modal-button-div {
-    padding: 1%;
+    display: inline-block;
+    text-align: center;
+    padding: 0.5%;
   }
 
   .modal-button {
     padding: 1%;
+    justify-content: center;
+    float: right;
   }
 
   .work {
