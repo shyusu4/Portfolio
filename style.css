@@ -101,6 +101,10 @@ hr {
   margin-right: 30px;
 }
 
+.mobile-nav img {
+  display: none;
+}
+
 .mobile-nav .btn span {
   display: block;
   position: absolute;
@@ -413,16 +417,23 @@ textarea:focus {
   .mobile-nav {
     display: flex;
   }
-  .mobile-nav .btn{
-    display: none
+
+  .mobile-nav .btn {
+    display: none;
   }
+
+  .mobile-nav img {
+    display: block;
+    cursor: pointer;
+  }
+
   .mobile-nav .mobile-nav-menu {
     display: flex;
     gap: 8px;
-    /* background-color: black; */
     list-style: none;
-    padding-right :30px
+    padding-right: 30px;
   }
+
   .mobile-nav .mobile-nav-menu .items a {
     text-decoration: none;
     color: var(--white-color);
@@ -451,11 +462,6 @@ textarea:focus {
     gap: 8%;
     margin-right: 5rem;
     list-style: none;
-    color: var(--white-color);
-  }
-
-  .item a {
-    text-decoration: none;
     color: var(--white-color);
   }
 

@@ -6,7 +6,6 @@ const link3 = document.querySelector('.link3');
 
 link1.addEventListener('click', () => {
   mobileNav.classList.remove('active');
-
 });
 
 link2.addEventListener('click', () => {
