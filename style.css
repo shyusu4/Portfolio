@@ -411,7 +411,21 @@ textarea:focus {
 
 @media screen and (min-width: 768px) {
   .mobile-nav {
-    display: none;
+    display: flex;
+  }
+  .mobile-nav .btn{
+    display: none
+  }
+  .mobile-nav .mobile-nav-menu {
+    display: flex;
+    gap: 8px;
+    /* background-color: black; */
+    list-style: none;
+    padding-right :30px
+  }
+  .mobile-nav .mobile-nav-menu .items a {
+    text-decoration: none;
+    color: var(--white-color);
   }
 
   .logo-name {

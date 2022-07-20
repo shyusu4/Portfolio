@@ -5,16 +5,16 @@ const link2 = document.querySelector('.link2');
 const link3 = document.querySelector('.link3');
 
 link1.addEventListener('click', () => {
-  mobileNav.classList.toggle('active');
+  mobileNav.classList.remove('active');
 
 });
 
 link2.addEventListener('click', () => {
-  mobileNav.classList.toggle('active');
+  mobileNav.classList.remove('active');
 });
 
 link3.addEventListener('click', () => {
-  mobileNav.classList.toggle('active');
+  mobileNav.classList.remove('active');
 });
 
 btn.addEventListener('click', () => {
