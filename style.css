@@ -64,43 +64,41 @@ hr {
   font-weight: 500;
   font-size: 25px;
   color: var(--white-color);
-  margin-left:30px
+  margin-left: 30px;
 }
-.mobile-nav.active .mobile-nav__logo-name{
-  visibility:hidden;
+
+.mobile-nav.active .mobile-nav__logo-name {
+  visibility: hidden;
 }
 
 .mobile-nav {
-  position:fixed;
-  top:0px;
-  width:100%;
-  padding-top:10px;
-  height:auto;
-  background-color: var(--primary-color);
-z-index:10
-}
-.mobile-nav.active{
-  /* backdrop-filter: blur(15px);
-  mix-blend-mode: multiply; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 10px;
+  height: auto;
+  backdrop-filter: blur(55px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 1000;
 }
 
 .mobile-nav-screen {
   display: flex;
-  justify-content : space-between;
-  align-items : center;
-  width:100%;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   height: auto;
   gap: 10px;
 }
 
 .mobile-nav-screen .btn {
   display: flex;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
   border: none;
   outline: none;
   cursor: pointer;
-  margin-right:30px
+  margin-right: 30px;
 }
 
 .mobile-nav .btn span {
@@ -138,13 +136,14 @@ z-index:10
 .mobile-nav .btn span::after {
   transform: translateY(-8px);
 }
-.mobile-nav.active .btn span::after{
-  transform: translateZ(0px) rotateZ(-45deg);
-}
-.mobile-nav .mobile-nav-menu{
-display: none;
+
+.mobile-nav.active .btn span::after {
+  transform: translateZ(0) rotateZ(-45deg);
 }
 
+.mobile-nav .mobile-nav-menu {
+  display: none;
+}
 
 .mobile-nav.active .mobile-nav-menu {
   display: flex;
@@ -152,9 +151,10 @@ display: none;
   justify-content: start;
   gap: 3rem;
   padding: 5rem;
-  height:100vh;
+  height: 100vh;
   list-style: none;
 }
+
 .mobile-nav.active .mobile-nav-menu li a {
   color: var(--white-color);
   text-decoration: none;
@@ -445,7 +445,7 @@ textarea:focus {
     z-index: 2;
   }
 
-  .navbar-items {
+  .nav-items {
     display: flex;
     font-size: large;
     gap: 8%;
@@ -460,7 +460,7 @@ textarea:focus {
   }
 
   .container {
-    margin-top: 15%;
+    margin-top: 10%;
     width: 100%;
   }
 

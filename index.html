@@ -20,17 +20,33 @@
   </head>
   <body>
     <main>
+      <header class="navbar">
+        <p class="logo-name">SY</p>
+        <ul class="nav-items">
+          <li class="item">
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li class="item"><a href="#about">About</a></li>
+          <li class="item"><a href="#contact">Contact</a></li>
+          <li><img src="imgs/email-icon.svg" alt="email icon" /></li>
+        </ul>
+      </header>
+
       <header class="mobile-nav">
         <div class="mobile-nav-screen">
           <p class="mobile-nav__logo-name">SY</p>
-          <button type="button" class="btn" aria-label="toggle curtain navigation"
+          <button
+            type="button"
+            class="btn"
+            aria-label="toggle curtain navigation"
           >
             <span></span>
           </button>
         </div>
-        <ul class="mobile-nav-menu
-        ">
-          <li class="items"><a href="#portfolio" class="link1">Portfolio</a></li>
+        <ul class="mobile-nav-menu">
+          <li class="items">
+            <a href="#portfolio" class="link1">Portfolio</a>
+          </li>
           <li class="items"><a href="#about" class="link2">About</a></li>
           <li class="items"><a href="#contact" class="link3">Contact</a></li>
         </ul>
@@ -114,7 +130,7 @@
       </div>
     </section>
     <!-- Projects Section -->
-    <section class="my-work">
+    <section class="my-work" id="portfolio">
       <h3>MY RECENT WORK</h3>
       <hr />
       <div class="flex-container">
@@ -214,7 +230,7 @@
       </div>
     </section>
     <!-- Footer -->
-    <footer class="contact-me">
+    <footer class="contact-me" id="contact">
       <h4>CONTACT ME</h4>
       <p class="description-2">
         If you have an application you are interested in developing, a feature
