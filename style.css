@@ -77,9 +77,17 @@ hr {
   width: 100%;
   padding-top: 10px;
   height: auto;
-  backdrop-filter: blur(55px);
-  -webkit-backdrop-filter: blur(8px);
+  background-color: var(--primary-color);
+  background-image: url(imgs/shapes-menu.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
   z-index: 1000;
+}
+
+.fa-angle-right {
+  float: right;
+  color: var(--primary-2-color);
 }
 
 .mobile-nav-screen {
@@ -443,6 +451,10 @@ textarea:focus {
     font-weight: 500;
     font-size: 25px;
     color: var(--white-color);
+  }
+
+  .fa-angle-right {
+    display: none;
   }
 
   .navbar {
