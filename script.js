@@ -1,3 +1,4 @@
+
 const mobileNav = document.querySelector('.mobile-nav');
 const btn = document.querySelector('.btn');
 const link1 = document.querySelector('.link1');
@@ -18,4 +19,12 @@ link3.addEventListener('click', () => {
 
 btn.addEventListener('click', () => {
   mobileNav.classList.toggle('active');
+
+document.querySelector('#open-popup').addEventListener('click', function () {
+  document.querySelector('.popup').classList.add('active');
+});
+
+document.querySelector('.close-btn').addEventListener('click', function () {
+  document.querySelector('.popup').classList.remove('active');
+
 });
