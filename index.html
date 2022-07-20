@@ -132,31 +132,45 @@
     <section class="my-work" id="portfolio">
       <h3>MY RECENT WORK</h3>
       <hr />
-      <div class="popup-container">
-        <!-- <button id="open-popup"></button> -->
-      </div>
-      <div class="popup">
-        <div class="close-btn">&times;</div>
-        <span>Multi - Post stories</span>
-        <div class="popup-info">
+      <div class="modal" id="modal">
+        <div class="modal-header">
+          <div class="title">Multi Post Stories</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
           <img src="imgs/portfolio-img.svg" alt="portfolio image" />
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it 1960s with the releaLorem Ipsum is simply dummy
-            text of the printing and typesetting ever since the 1500s, when an
-            unknown printer took a galley of type veris lapoa todoe.
+            Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type and
+            scrambled it 1960s with the releaLorem Ipsum is simply dummy text of
+            the printing and typesetting ever since the 1500s, when an unknown
+            printer took a galley of type veris lapoa todoe.
           </p>
-          <ul class="popup-tags">
+          <ul class="modal-tags">
             <li><span>html</span></li>
             <li><span>ruby on rails</span></li>
             <li><span>css</span></li>
           </ul>
-          <a class="button">See Live</a>
-          <a class="button">See Source</a>
+          <div class="modal-button-div">
+            <a href="#" class="modal-button"
+              >See Live
+              <img
+                class="modal-icon"
+                src="imgs/circle-arrow.svg"
+                alt="circle arrow icon"
+              />
+            </a>
+          </div>
+          <div class="modal-button-div">
+            <a href="#" class="modal-button"
+              >See Source
+              <img class="modal-icon" src="imgs/github.svg" alt="github icon" />
+            </a>
+          </div>
         </div>
       </div>
+      <div id="overlay"></div>
 
       <div class="flex-container">
         <div class="flex-item-style-1" id="flex-item-1">
@@ -180,9 +194,11 @@
               <li><span>bootstrap</span></li>
               <li><span>ruby</span></li>
             </ul>
-            <a href="#flex-item-1" class="button" id="open-popup"
-              >See Project</a
-            >
+            <div class="popup-container">
+              <a data-modal-target="#modal" class="button" id="open-popup"
+                >See Project</a
+              >
+            </div>
           </div>
         </div>
         <div class="flex-item-style-2" id="flex-item-2">
@@ -205,7 +221,7 @@
               <li><span>bootstrap</span></li>
               <li><span>ruby</span></li>
             </ul>
-            <a href="#flex-item-2" class="button">See Project</a>
+            <a data-modal-target="#modal" class="button">See Project</a>
           </div>
         </div>
         <div class="flex-item-style-1" id="flex-item-3">
@@ -228,7 +244,7 @@
               <li><span>bootstrap</span></li>
               <li><span>ruby</span></li>
             </ul>
-            <a href="#flex-item-3" class="button">See Project</a>
+            <a data-modal-target="#modal" class="button">See Project</a>
           </div>
         </div>
         <div class="flex-item-style-2" id="flex-item-4">
@@ -251,7 +267,7 @@
               <li><span>bootstrap</span></li>
               <li><span>ruby</span></li>
             </ul>
-            <a href="#flex-item-4" class="button">See Project</a>
+            <a data-modal-target="#modal" class="button">See Project</a>
           </div>
         </div>
       </div>
