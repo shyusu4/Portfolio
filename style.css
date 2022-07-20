@@ -57,25 +57,119 @@ hr {
 /* mobile styles */
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3%;
-  height: 6%;
-}
-
-.navbar-items {
   display: none;
 }
 
-.logo-name {
+.mobile-nav__logo-name {
   font-weight: 500;
   font-size: 25px;
   color: var(--white-color);
+  margin-left: 30px;
 }
 
-.union:hover {
+.mobile-nav.active .mobile-nav__logo-name {
+  visibility: hidden;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 10px;
+  height: auto;
+  background-color: var(--primary-color);
+  background-image: url(imgs/shapes-menu.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  z-index: 1000;
+}
+
+.fa-angle-right {
+  float: right;
+  color: var(--primary-2-color);
+}
+
+.mobile-nav-screen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  gap: 10px;
+}
+
+.mobile-nav-screen .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
   cursor: pointer;
+  margin-right: 30px;
+}
+
+.mobile-nav img {
+  display: none;
+}
+
+.mobile-nav .btn span {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: var(--white-color);
+  transition: transform 0.3s ease-out, opacity 0.1s ease-out;
+}
+
+.mobile-nav.active .btn span {
+  background: transparent;
+}
+
+.mobile-nav .btn span::before,
+.mobile-nav .btn span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--white-color);
+  transition: transform 0.3s ease-out, opacity 0.1s ease-out;
+}
+
+.mobile-nav .btn span::before {
+  transform: translateY(8px);
+}
+
+.mobile-nav.active .btn span::before {
+  transform: translateY(0) rotateZ(45deg);
+}
+
+.mobile-nav .btn span::after {
+  transform: translateY(-8px);
+}
+
+.mobile-nav.active .btn span::after {
+  transform: translateZ(0) rotateZ(-45deg);
+}
+
+.mobile-nav .mobile-nav-menu {
+  display: none;
+}
+
+.mobile-nav.active .mobile-nav-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 3rem;
+  padding: 5rem;
+  height: 100vh;
+  list-style: none;
+}
+
+.mobile-nav.active .mobile-nav-menu li a {
+  color: var(--white-color);
+  text-decoration: none;
 }
 
 .headline {
@@ -93,12 +187,13 @@ hr {
   font-weight: 700;
   font-size: 48px;
   text-align: center;
+  margin-top: 3rem;
   color: var(--primary-2-color);
   animation-duration: 4s;
   animation-name: name-slide;
 }
 
-@keyframes name-slide {
+/* @keyframes name-slide {
   from {
     margin-left: 100%;
     width: 300%;
@@ -126,7 +221,7 @@ hr {
     margin-left: 0%;
     width: 100%;
   }
-}
+} */
 
 .title {
   font-weight: 500;
@@ -327,27 +422,53 @@ textarea:focus {
 /* desktop styles */
 
 @media screen and (min-width: 768px) {
-  .union {
+  .mobile-nav {
+    display: flex;
+  }
+
+  .mobile-nav .btn {
     display: none;
   }
 
-  .headline {
-    background-image: url(imgs/two-circles-header.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+  .mobile-nav img {
+    display: block;
+    cursor: pointer;
+  }
+
+  .mobile-nav .mobile-nav-menu {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+    padding-right: 30px;
+  }
+
+  .mobile-nav .mobile-nav-menu .items a {
+    text-decoration: none;
+    color: var(--white-color);
+  }
+
+  .logo-name {
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--white-color);
+  }
+
+  .fa-angle-right {
+    display: none;
   }
 
   .navbar {
     display: flex;
+    justify-content: space-between;
     width: 100%;
     height: 100px;
     position: fixed;
     background: none;
+    padding: 2rem;
     z-index: 2;
   }
 
-  .navbar-items {
+  .nav-items {
     display: flex;
     font-size: large;
     gap: 8%;
@@ -356,18 +477,20 @@ textarea:focus {
     color: var(--white-color);
   }
 
-  .item a {
-    text-decoration: none;
-    color: var(--white-color);
-  }
-
   .container {
-    margin-top: 15%;
+    margin-top: 10%;
     width: 100%;
   }
 
   hr {
     width: 30rem;
+  }
+
+  .headline {
+    background-image: url(imgs/two-circles-header.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
   }
 
   .abilities {
