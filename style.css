@@ -279,37 +279,33 @@ hr {
 
 .modal {
   position: fixed;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.059);
+  border: 1px solid var(--white-color);
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.492);
+  backdrop-filter: blur(55px);
+  transform: translate(-50%, -50%) scale(1);
+  transition: 200ms ease-in-out;
+  z-index: 10;
+  height: min-content;
+  display: none;
+}
+
+.showModal {
+  display: block;
+  background: rgba(255, 255, 255, 0.16);
   top: 50%;
   left: 50%;
-  width: 90%;
-  transform: translate(-50%, -50%) scale(0);
-  transition: 200ms ease-in-out;
-  border: 1px solid white;
-  color: var(--white-color);
-  z-index: 10;
-  background: rgba(255, 255, 255, 0.059);
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(55px);
-}
-
-.modal-body img {
-  width: 100%;
-  height: auto;
-}
-
-.modal.active {
-  transform: translate(-50%, -50%) scale(1);
 }
 
 .modal-header {
-  padding: 5% 5%;
   display: flex;
   justify-content: space-between;
-}
-
-.modal-header .title {
-  font-size: 1.5rem;
+  align-items: center;
   color: var(--white-color);
+  padding: 25px 0;
+  width: 90%;
+  margin: auto;
 }
 
 .modal-header .close-button {
@@ -322,42 +318,22 @@ hr {
   color: var(--white-color);
 }
 
-.modal-body .modal-icon {
-  width: 22%;
-  height: auto;
-  padding: 1px;
-  vertical-align: middle;
-}
-
-.modal-button-div {
-  padding: 1.5%;
-}
-
-.modal-button {
-  background-color: var(--primary-2-color);
-  color: var(--white-color);
-  transition: 200ms ease-out;
-  border: none;
-  padding: 2%;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-}
-
-.modal-button:hover {
-  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
-  transform: translateY(3px);
-}
-
 .modal-body {
   padding: 5% 5%;
   text-align: center;
+  color: var(--white-color);
 }
 
 .modal-body p {
   padding: 3% 0.5% 3% 0.5%;
   line-height: 25px;
   font-size: small;
+}
+
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .modal-tags {
@@ -388,9 +364,38 @@ hr {
   pointer-events: none;
 }
 
-#overlay.active {
-  opacity: 1;
-  pointer-events: all;
+.modal-body .modal-icon {
+  width: 22%;
+  height: auto;
+  padding: 1px;
+  vertical-align: middle;
+}
+
+.modal-body .modal-icon-2 {
+  width: 20%;
+  height: auto;
+  padding: 1.5px;
+  vertical-align: middle;
+}
+
+.modal-button-div {
+  padding: 1.5%;
+}
+
+.modal-button {
+  background-color: var(--primary-2-color);
+  color: var(--white-color);
+  transition: 200ms ease-out;
+  border: none;
+  padding: 2%;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.modal-button:hover {
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+  transform: translateY(3px);
 }
 
 .work-1,
@@ -629,11 +634,11 @@ textarea:focus {
   }
 
   .modal-body {
-    padding: 1rem 3rem 1rem 3rem;
+    padding: 1rem 2rem 1rem 2rem;
   }
 
   .modal-body p {
-    padding: 0 1% 0 1%;
+    padding: 0 2% 0 2%;
   }
 
   .modal-header {
@@ -653,7 +658,7 @@ textarea:focus {
   }
 
   .modal-button {
-    padding: 1%;
+    padding: 2%;
     justify-content: center;
     float: right;
   }
