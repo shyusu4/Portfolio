@@ -283,7 +283,7 @@ hr {
   background-color: rgba(255, 255, 255, 0.059);
   border: 1px solid var(--white-color);
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.492);
-  backdrop-filter: blur(55px);
+  backdrop-filter: blur(95px);
   transform: translate(-50%, -50%) scale(1);
   transition: 200ms ease-in-out;
   z-index: 10;

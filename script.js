@@ -21,7 +21,6 @@ btn.addEventListener('click', () => {
   mobileNav.classList.toggle('active');
 });
 
-
 const modalArr = [
   {
     projectId: 'projectOne',
