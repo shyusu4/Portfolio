@@ -132,36 +132,12 @@
     <section class="my-work" id="portfolio">
       <h3>MY RECENT WORK</h3>
       <hr />
-      <div class="popup-container">
-        <!-- <button id="open-popup"></button> -->
-      </div>
-      <div class="popup">
-        <div class="close-btn">&times;</div>
-        <span>Multi - Post stories</span>
-        <div class="popup-info">
-          <img src="imgs/portfolio-img.svg" alt="portfolio image" />
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it 1960s with the releaLorem Ipsum is simply dummy
-            text of the printing and typesetting ever since the 1500s, when an
-            unknown printer took a galley of type veris lapoa todoe.
-          </p>
-          <ul class="popup-tags">
-            <li><span>html</span></li>
-            <li><span>ruby on rails</span></li>
-            <li><span>css</span></li>
-          </ul>
-          <a class="button">See Live</a>
-          <a class="button">See Source</a>
-        </div>
-      </div>
-
+      <section class="modal" id="modal"></section>
+      <section class="projects" id="projects"></section>
       <div class="flex-container">
         <div class="flex-item-style-1" id="flex-item-1">
           <img
-            src="imgs/img-placeholder.svg"
+            src="imgs/img-placeholder1.jpg"
             alt="multi-post stories project"
             class="my-work-img"
           />
@@ -180,14 +156,16 @@
               <li><span>bootstrap</span></li>
               <li><span>ruby</span></li>
             </ul>
-            <a href="#flex-item-1" class="button" id="open-popup"
-              >See Project</a
-            >
+            <div class="popup-container">
+              <a onclick='window.location.href="#modal"' class="button"
+                >See Project</a
+              >
+            </div>
           </div>
         </div>
         <div class="flex-item-style-2" id="flex-item-2">
           <img
-            src="imgs/img-placeholder.svg"
+            src="imgs/img-placeholder2.jpg"
             alt="multi-post stories project"
             class="my-work-img"
           />
@@ -205,12 +183,14 @@
               <li><span>bootstrap</span></li>
               <li><span>ruby</span></li>
             </ul>
-            <a href="#flex-item-2" class="button">See Project</a>
+            <a onclick='window.location.href="#modal"' class="button"
+                >See Project</a
+              >
           </div>
         </div>
         <div class="flex-item-style-1" id="flex-item-3">
           <img
-            src="imgs/img-placeholder.svg"
+            src="imgs/img-placeholder3.jpg"
             alt="multi-post stories project"
             class="my-work-img"
           />
@@ -228,30 +208,9 @@
               <li><span>bootstrap</span></li>
               <li><span>ruby</span></li>
             </ul>
-            <a href="#flex-item-3" class="button">See Project</a>
-          </div>
-        </div>
-        <div class="flex-item-style-2" id="flex-item-4">
-          <img
-            src="imgs/img-placeholder.svg"
-            alt="multi-post stories project"
-            class="my-work-img"
-          />
-          <div class="project-info-2">
-            <span class="project">Multi-Post Stories</span>
-            <p class="project-description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.
-            </p>
-            <ul class="tags">
-              <li><span>css</span></li>
-              <li><span>html</span></li>
-              <li><span>bootstrap</span></li>
-              <li><span>ruby</span></li>
-            </ul>
-            <a href="#flex-item-4" class="button">See Project</a>
+            <a onclick='window.location.href="#modal"' class="button"
+                >See Project</a
+              >
           </div>
         </div>
       </div>
