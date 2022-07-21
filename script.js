@@ -25,26 +25,20 @@ const projects = [
   {
     project1: 'projectOne',
     name: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.' 
-    + 'has been the industrys standard dummy text ever since the 1500s, when an unknown printer took'
-    + 'a standard dummy text.',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     image: './imgs/img-placeholder1.jpg',
     project2: 'projectTwo',
     name2: 'Multi-Post Stories',
-    description2: 'A daily selection of privately personalized reads; no accounts or sign-ups required.' 
-    + 'has been the industrys standard dummy text ever since the 1500s, when an unknown printer took'
-    + 'a standard dummy text.',
+    description2: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     image2: './imgs/img-placeholder2.jpg',
     project3: 'projectThree',
     name3: 'Multi-Post Stories',
-    description3: 'A daily selection of privately personalized reads; no accounts or sign-ups required.' 
-    + 'has been the industrys standard dummy text ever since the 1500s, when an unknown printer took'
-    + 'a standard dummy text.',
+    description3: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     image3: './imgs/img-placeholder3.jpg',
   },
 ];
 
-document.getElementById('projects').innerHTML = projects.map((y) =>`<div class="flex-container">
+document.getElementById('projects').innerHTML = projects.map((y) => `<div class="flex-container">
 <div class="flex-item-style-1" id="flex-item-1">
   <img
     src="${y.image}"
