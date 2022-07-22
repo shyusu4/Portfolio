@@ -53,7 +53,6 @@ body {
   padding: 0.7rem;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 15px;
   width: 10rem;
 }
@@ -447,12 +446,6 @@ hr {
   padding: 1rem;
   color: var(--primary-3-color);
 }
-
-/* .flex-container {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-} */
 
 .flex-item-style-1,
 .flex-item-style-2 {
