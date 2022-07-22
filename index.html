@@ -143,42 +143,37 @@
         that you need built or a project that needs coding. I'd love to help
         with it.
       </p>
-      <form action="https://formspree.io/f/mqknvele" method="POST">
-        <ul class="form-fields">
-          <li>
-            <label for="name">Name</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              maxlength="30"
-              placeholder="Enter name"
-              required
-            />
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter email"
-              required
-            />
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea
-              maxlength="500"
-              name="message"
-              id="message"
-              placeholder="Enter text here"
-              required
-            ></textarea>
-          </li>
-          <li><button class="button" type="submit">Submit</button></li>
-        </ul>
-      </form> -->
+      <form action="https://formspree.io/f/mqknvele" method="post" class="form">
+        <div class="form-fields">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            maxlength="30"
+            placeholder="Enter name"
+            required
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter email"
+            required
+          />
+          <label for="message">Message</label>
+          <textarea
+            maxlength="500"
+            name="message"
+            id="message"
+            placeholder="Enter text here"
+            required
+          ></textarea>
+          <input class="submit-button" type="submit" value="submit" />
+          <div class="email-error">Enter email in lowercase</div>
+        </div>
+      </form>
       <!-- Social media links -->
       <section class="social-media">
         <ul>
