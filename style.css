@@ -45,6 +45,24 @@ body {
   transform: translateY(3px);
 }
 
+.submit-button {
+  background-color: var(--primary-2-color);
+  color: var(--white-color);
+  transition: 200ms ease-out;
+  border: none;
+  padding: 0.7rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  width: 10rem;
+}
+
+.submit-button:hover {
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+  transform: translateY(3px);
+}
+
 hr {
   border: none;
   height: 1.5px;
@@ -540,6 +558,12 @@ textarea:focus {
   border: 1px solid black;
 }
 
+.error {
+  display: none;
+  color: crimson;
+  font-size: 20px;
+}
+
 /* desktop styles */
 
 @media screen and (min-width: 768px) {
@@ -741,5 +765,11 @@ textarea:focus {
 
   .description-2 {
     width: 40%;
+  }
+
+  #name,
+  #email,
+  #message {
+    width: 35rem;
   }
 }

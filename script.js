@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+/* mobile menu */
 const mobileNav = document.querySelector('.mobile-nav');
 const btn = document.querySelector('.btn');
 const link1 = document.querySelector('.link1');
@@ -28,7 +29,7 @@ const modalArr = [
     img: './imgs/img-placeholder1.jpg',
     imgAlt: 'multi-post stories project',
     description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy textever since the 1500s, when an unknown printer took a standard dummy text.',
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy textever since the 1500s, when an unknown printer took a standard dummy text.',
     modalTags: ['css', 'html', 'bootstrap', 'ruby'],
     liveLink: 'https://shyusu4.github.io/Portfolio/',
     sourceLink: 'https://github.com/shyusu4/Portfolio',
@@ -50,20 +51,21 @@ const modalArr = [
     imgAlt: 'multi-post stories project',
     title: 'Multi-Post Stories',
     description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy textever since the 1500s, when an unknown printer took a standard dummy text.',
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy textever since the 1500s, when an unknown printer took a standard dummy text.',
     modalTags: ['css', 'html', 'bootstrap', 'ruby'],
     liveLink: 'https://shyusu4.github.io/Portfolio/',
     sourceLink: 'https://github.com/shyusu4/Portfolio',
-  }
+  },
 ];
 
+/* dynamic cards */
 const container = document.getElementById('projects');
 
-for (let i = 0; i < modalArr.length; i += 1){
+for (let i = 0; i < modalArr.length; i += 1) {
   let project = modalArr[i];
   const projectElement = document.createElement('div');
   projectElement.classList.add('project');
-  if ( i % 2 === 0) {
+  if (i % 2 === 0) {
     projectElement.innerHTML = `
   <div class="flex-container">
   <div class="flex-item-style-1" id="flex-item-1">
@@ -84,8 +86,8 @@ for (let i = 0; i < modalArr.length; i += 1){
   </div>
 </div>
 </div>`;
-    container.appendChild(projectElement);}
-  else {
+    container.appendChild(projectElement);
+  } else {
     projectElement.innerHTML = `<div class="flex-item-style-2" id="flex-item-2">
   <img
     src="${project.img}"
@@ -107,9 +109,11 @@ for (let i = 0; i < modalArr.length; i += 1){
     <a href="#flex-item-2" class="button">See Project</a>
   </div>
 </div>`;
-    container.appendChild(projectElement);}
+    container.appendChild(projectElement);
+  }
 }
 
+/* modal */
 const modal = document.getElementById('modal');
 const btns = document.querySelectorAll('.button');
 const modalButton = Array.from(btns);
@@ -161,4 +165,15 @@ modalButton.forEach((el, i) => {
 
 modal.addEventListener('click', () => {
   modal.classList.toggle('showModal');
+});
+
+/* form validation */
+const form = document.querySelector('.form');
+const error = document.querySelector('.error');
+
+form.addEventListener('submit', (e) => {
+  if (form.email.value !== form.email.value.toLowerCase()) {
+    error.style.display = 'block';
+    e.preventDefault();
+  }
 });
