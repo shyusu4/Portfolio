@@ -430,17 +430,17 @@ hr {
   color: var(--primary-3-color);
 }
 
-.flex-container {
+/* .flex-container {
   display: flex;
   flex-direction: column;
   align-content: center;
-  padding-left: 5%;
-}
+} */
 
 .flex-item-style-1,
 .flex-item-style-2 {
   width: 95%;
   padding-top: 5%;
+  padding-left: 5%;
 }
 
 .my-work-img {
@@ -449,13 +449,13 @@ hr {
 }
 
 .project {
-  text-align: center;
   font-size: 30px;
   color: var(--white-color);
 }
 
-.project-info {
-  padding: 10%;
+.project-info-1,
+.project-info-2 {
+  font-size: 20px;
 }
 
 .project-description {
@@ -646,8 +646,8 @@ textarea:focus {
   }
 
   .modal img {
-    width: 70%;
-    height: 50%;
+    width: 60%;
+    height: auto;
     padding: 1rem;
   }
 
@@ -719,16 +719,17 @@ textarea:focus {
     display: flex;
     flex-direction: row;
     font-size: 30px;
-    font-weight: bold;
   }
 
   .project-info-1 {
+    font-size: 20px;
     float: right;
     margin-right: 7%;
     width: 40%;
   }
 
   .project-info-2 {
+    font-size: 20px;
     float: left;
     margin-left: 7%;
     width: 40%;

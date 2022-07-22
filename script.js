@@ -21,152 +21,143 @@ btn.addEventListener('click', () => {
   mobileNav.classList.toggle('active');
 });
 
-const projects = [
+/* const modalArr = [
   {
-    project1: 'projectOne',
+    id: 1,
     name: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    image: './imgs/img-placeholder1.jpg',
-    project2: 'projectTwo',
-    name2: 'Multi-Post Stories',
-    description2: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    image2: './imgs/img-placeholder2.jpg',
-    project3: 'projectThree',
-    name3: 'Multi-Post Stories',
-    description3: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    image3: './imgs/img-placeholder3.jpg',
+    description: 'Lorem Ipsum is simply dummy text of the printing and '
+    + 'typesetting industry. Lorem Ipsum has been the industry\'s '
+    + 'standard dummy text ever since the 1500s, when an unknown printer '
+    + 'took a galley of type and scrambled it to make a type specimen book. '
+    + 'It has survived not only five centuries, but also the leap into electronic '
+    + 'typesetting, remaining essent',
+    image: './imgs/img-placeholder1.svg',
+    technologies: ['html', 'ruby on rails', 'css'],
+    liveLink: 'https://shyusu4.github.io/Portfolio/',
+    sourceLink: 'https://github.com/shyusu4/Portfolio',
   },
-];
-
-document.getElementById('projects').innerHTML = projects.map((y) => `<div class="flex-container">
-<div class="flex-item-style-1" id="flex-item-1">
-  <img
-    src="${y.image}"
-    alt="multi-post stories project"
-    class="my-work-img"
-  />
-  <div class="project-info-1">
-    <span class="project">${y.name}</span>
-    <p class="project-description">
-    ${y.description}
-    </p>
-    <ul class="tags">
-      <li><span>css</span></li>
-      <li><span>html</span></li>
-      <li><span>bootstrap</span></li>
-      <li><span>ruby</span></li>
-    </ul>
-    <div class="popup-container">
-      <a onclick='window.location.href="#modal"' class="button"
-        >See Project</a
-      >
-    </div>
-  </div>
-</div>
-<div class="flex-item-style-2" id="flex-item-2">
-  <img
-    src="${y.image2}"
-    alt="multi-post stories project"
-    class="my-work-img"
-  />
-  <div class="project-info-2">
-    <span class="project">${y.name2}</span>
-    <p class="project-description">
-    ${y.description2}
-    </p>
-    <ul class="tags">
-      <li><span>css</span></li>
-      <li><span>html</span></li>
-      <li><span>bootstrap</span></li>
-      <li><span>ruby</span></li>
-    </ul>
-    <a onclick='window.location.href="#modal"' class="button"
-        >See Project</a
-      >
-  </div>
-</div>
-<div class="flex-item-style-1" id="flex-item-3">
-  <img
-    src="${y.image3}"
-    alt="multi-post stories project"
-    class="my-work-img"
-  />
-  <div class="project-info-1">
-    <span class="project">${y.name3}</span>
-    <p class="project-description">
-    ${y.description3}
-    </p>
-    <ul class="tags">
-      <li><span>css</span></li>
-      <li><span>html</span></li>
-      <li><span>bootstrap</span></li>
-      <li><span>ruby</span></li>
-    </ul>
-    <a onclick='window.location.href="#modal"' class="button"
-        >See Project</a
-      >
-  </div>
-</div>
-</div>`).join('');
+  {
+    id: 2,
+    name: 'Multi-Post Stories',
+    description: 'Lorem Ipsum is simply dummy text of the printing and '
+    + 'typesetting industry. Lorem Ipsum has been the industry\'s '
+    + 'standard dummy text ever since the 1500s, when an unknown printer '
+    + 'took a galley of type and scrambled it to make a type specimen book. '
+    + 'It has survived not only five centuries, but also the leap into electronic '
+    + 'typesetting, remaining essent',
+    image: './imgs/portfolio-img.svg',
+    technologies: ['html', 'ruby on rails', 'css'],
+    liveLink: 'https://shyusu4.github.io/Portfolio/',
+    sourceLink: 'https://github.com/shyusu4/Portfolio',
+  },
+  {
+    id: 3,
+    name: 'Multi-Post Stories',
+    description: 'Lorem Ipsum is simply dummy text of the printing and '
+    + 'typesetting industry. Lorem Ipsum has been the industry\'s '
+    + 'standard dummy text ever since the 1500s, when an unknown printer '
+    + 'took a galley of type and scrambled it to make a type specimen book. '
+    + 'It has survived not only five centuries, but also the leap into electronic '
+    + 'typesetting, remaining essent',
+    image: './imgs/portfolio-img.svg',
+    technologies: ['html', 'ruby on rails', 'css'],
+    liveLink: 'https://shyusu4.github.io/Portfolio/',
+    sourceLink: 'https://github.com/shyusu4/Portfolio',
+  },
+]; */
 
 const modalArr = [
   {
-    projectId: 'projectOne',
-    name: 'Multi-Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and '
-    + 'typesetting industry. Lorem Ipsum has been the industry\'s '
-    + 'standard dummy text ever since the 1500s, when an unknown printer '
-    + 'took a galley of type and scrambled it to make a type specimen book. '
-    + 'It has survived not only five centuries, but also the leap into electronic '
-    + 'typesetting, remaining essent',
-    image: './imgs/portfolio-img.svg',
-    technologies: ['html', 'ruby on rails', 'css'],
-    liveLink: 'https://shyusu4.github.io/Portfolio/',
-    sourceLink: 'https://github.com/shyusu4/Portfolio',
-  },
-  {
-    projectId: 'projectTwo',
-    name: 'Multi-Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and '
-    + 'typesetting industry. Lorem Ipsum has been the industry\'s '
-    + 'standard dummy text ever since the 1500s, when an unknown printer '
-    + 'took a galley of type and scrambled it to make a type specimen book. '
-    + 'It has survived not only five centuries, but also the leap into electronic '
-    + 'typesetting, remaining essent',
-    image: './imgs/portfolio-img.svg',
-    technologies: ['html', 'ruby on rails', 'css'],
-    liveLink: 'https://shyusu4.github.io/Portfolio/',
-    sourceLink: 'https://github.com/shyusu4/Portfolio',
-  },
-  {
-    projectId: 'projectThree',
-    name: 'Multi-Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and '
-    + 'typesetting industry. Lorem Ipsum has been the industry\'s '
-    + 'standard dummy text ever since the 1500s, when an unknown printer '
-    + 'took a galley of type and scrambled it to make a type specimen book. '
-    + 'It has survived not only five centuries, but also the leap into electronic '
-    + 'typesetting, remaining essent',
-    image: './imgs/portfolio-img.svg',
-    technologies: ['html', 'ruby on rails', 'css'],
-    liveLink: 'https://shyusu4.github.io/Portfolio/',
-    sourceLink: 'https://github.com/shyusu4/Portfolio',
-  },
-  {
-    projectId: 'projectFour',
-    name: 'Multi-Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and '
-    + 'typesetting industry. Lorem Ipsum has been the industry\'s '
-    + 'standard dummy text ever since the 1500s, when an unknown printer '
-    + 'took a galley of type and scrambled it to make a type specimen book. '
-    + 'It has survived not only five centuries, but also the leap into electronic '
-    + 'typesetting, remaining essent',
-    image: './imgs/portfolio-img.svg',
-    technologies: ['html', 'ruby on rails', 'css'],
-    liveLink: 'https://shyusu4.github.io/Portfolio/',
-    sourceLink: 'https://github.com/shyusu4/Portfolio',
-  },
+      id: 1,
+      title: 'Multi-Post Stories',
+      img: './imgs/img-placeholder1.jpg',
+      imgAlt: 'multi-post stories project',
+      description:
+        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy textever since the 1500s, when an unknown printer took a standard dummy text.',
+      modalTags: ['css', 'html', 'bootstrap', 'ruby'],
+      liveLink: 'https://shyusu4.github.io/Portfolio/',
+      sourceLink: 'https://github.com/shyusu4/Portfolio',
+    },
+    {
+      id: 1,
+      img: './imgs/img-placeholder2.jpg',
+      imgAlt: 'multi-post stories project',
+      title: 'Multi-Post Stories',
+      description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy textever since the 1500s, when an unknown printer took a standard dummy text.',
+      modalTags: ['css', 'html', 'bootstrap', 'ruby'],
+      liveLink: 'https://shyusu4.github.io/Portfolio/',
+      sourceLink: 'https://github.com/shyusu4/Portfolio',
+    },
+    {
+      id: 1,
+      img: './imgs/img-placeholder3.jpg',
+      imgAlt: 'multi-post stories project',
+      title: 'Multi-Post Stories',
+      description:
+        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy textever since the 1500s, when an unknown printer took a standard dummy text.',
+      modalTags: ['css', 'html', 'bootstrap', 'ruby'],
+      liveLink: 'https://shyusu4.github.io/Portfolio/',
+      sourceLink: 'https://github.com/shyusu4/Portfolio',
+    }
 ];
+
+const container = document.getElementById('projects');
+
+for (let i = 0; i < modalArr.length; i += 1){
+  let project = modalArr[i];
+  const projectElement = document.createElement('div');
+  projectElement.classList.add('project');
+  if ( i % 2 === 0) {
+  projectElement.innerHTML = `
+  <div class="flex-container">
+  <div class="flex-item-style-1" id="flex-item-1">
+  <img
+    src="${project.img}"
+    alt="${project.imgAlt}"
+    class="my-work-img"
+  />
+  <div class="project-info-1">
+  <div class="project">
+    <span>${project.title}</span></div>
+    <p class="project-description">
+    ${project.description}
+    </p>
+    <ul class="tags">
+      <li>${project.modalTags[0]}</li>
+      <li>${project.modalTags[1]}</li>
+      <li>${project.modalTags[2]}</li>
+      <li>${project.modalTags[3]}</li>
+    </ul>
+    <a href="#flex-item-1" class="button" id="open-popup">See Project</a>
+  </div>
+</div>
+</div>`;
+container.appendChild(projectElement);}
+else {
+  projectElement.innerHTML = `<div class="flex-item-style-2" id="flex-item-2">
+  <img
+    src="${project.img}"
+    alt="${project.imgAlt}"
+    class="my-work-img"
+  />
+  <div class="project-info-2">
+  <div class="project">
+    <span>${project.title}</span></div>
+    <p class="project-description">
+      ${project.description}
+    </p>
+    <ul class="tags">
+      <li>${project.modalTags[0]}</li>
+      <li>${project.modalTags[1]}</li>
+      <li>${project.modalTags[2]}</li>
+      <li>${project.modalTags[3]}</li>
+    </ul>
+    <a href="#flex-item-2" class="button">See Project</a>
+  </div>
+</div>`;
+container.appendChild(projectElement);}
+};
 
 const modal = document.getElementById('modal');
 const btns = document.querySelectorAll('.button');
@@ -183,14 +174,14 @@ modalButton.forEach((el, i) => {
       <button class='close-button'>&times;</button>
     </div>
     <div class='modal-body'>
-      <img src='${modalArr[i].image}' alt='portfolio image' />
+      <img src='${modalArr[i].img}' alt='portfolio image' />
       <p>
       ${modalArr[i].description}
       </p>
       <ul class='modal-tags'>
-        <li><span>html</span></li>
-        <li><span>ruby on rails</span></li>
-        <li><span>css</span></li>
+        <li>${modalArr[i].modalTags[0]}</li>
+        <li>${modalArr[i].modalTags[1]}</li>
+        <li>${modalArr[i].modalTags[2]}</li>
       </ul>
       <div class='modal-button-div'>
         <a href='${modalArr[i].liveLink}' class='modal-button'
