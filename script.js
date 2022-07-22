@@ -21,85 +21,40 @@ btn.addEventListener('click', () => {
   mobileNav.classList.toggle('active');
 });
 
-/* const modalArr = [
-  {
-    id: 1,
-    name: 'Multi-Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and '
-    + 'typesetting industry. Lorem Ipsum has been the industry\'s '
-    + 'standard dummy text ever since the 1500s, when an unknown printer '
-    + 'took a galley of type and scrambled it to make a type specimen book. '
-    + 'It has survived not only five centuries, but also the leap into electronic '
-    + 'typesetting, remaining essent',
-    image: './imgs/img-placeholder1.svg',
-    technologies: ['html', 'ruby on rails', 'css'],
-    liveLink: 'https://shyusu4.github.io/Portfolio/',
-    sourceLink: 'https://github.com/shyusu4/Portfolio',
-  },
-  {
-    id: 2,
-    name: 'Multi-Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and '
-    + 'typesetting industry. Lorem Ipsum has been the industry\'s '
-    + 'standard dummy text ever since the 1500s, when an unknown printer '
-    + 'took a galley of type and scrambled it to make a type specimen book. '
-    + 'It has survived not only five centuries, but also the leap into electronic '
-    + 'typesetting, remaining essent',
-    image: './imgs/portfolio-img.svg',
-    technologies: ['html', 'ruby on rails', 'css'],
-    liveLink: 'https://shyusu4.github.io/Portfolio/',
-    sourceLink: 'https://github.com/shyusu4/Portfolio',
-  },
-  {
-    id: 3,
-    name: 'Multi-Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and '
-    + 'typesetting industry. Lorem Ipsum has been the industry\'s '
-    + 'standard dummy text ever since the 1500s, when an unknown printer '
-    + 'took a galley of type and scrambled it to make a type specimen book. '
-    + 'It has survived not only five centuries, but also the leap into electronic '
-    + 'typesetting, remaining essent',
-    image: './imgs/portfolio-img.svg',
-    technologies: ['html', 'ruby on rails', 'css'],
-    liveLink: 'https://shyusu4.github.io/Portfolio/',
-    sourceLink: 'https://github.com/shyusu4/Portfolio',
-  },
-]; */
-
 const modalArr = [
   {
-      id: 1,
-      title: 'Multi-Post Stories',
-      img: './imgs/img-placeholder1.jpg',
-      imgAlt: 'multi-post stories project',
-      description:
+    id: 1,
+    title: 'Multi-Post Stories',
+    img: './imgs/img-placeholder1.jpg',
+    imgAlt: 'multi-post stories project',
+    description:
         'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy textever since the 1500s, when an unknown printer took a standard dummy text.',
-      modalTags: ['css', 'html', 'bootstrap', 'ruby'],
-      liveLink: 'https://shyusu4.github.io/Portfolio/',
-      sourceLink: 'https://github.com/shyusu4/Portfolio',
-    },
-    {
-      id: 1,
-      img: './imgs/img-placeholder2.jpg',
-      imgAlt: 'multi-post stories project',
-      title: 'Multi-Post Stories',
-      description:
+    modalTags: ['css', 'html', 'bootstrap', 'ruby'],
+    liveLink: 'https://shyusu4.github.io/Portfolio/',
+    sourceLink: 'https://github.com/shyusu4/Portfolio',
+  },
+  {
+    id: 1,
+    img: './imgs/img-placeholder2.jpg',
+    imgAlt: 'multi-post stories project',
+    title: 'Multi-Post Stories',
+    description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy textever since the 1500s, when an unknown printer took a standard dummy text.',
-      modalTags: ['css', 'html', 'bootstrap', 'ruby'],
-      liveLink: 'https://shyusu4.github.io/Portfolio/',
-      sourceLink: 'https://github.com/shyusu4/Portfolio',
-    },
-    {
-      id: 1,
-      img: './imgs/img-placeholder3.jpg',
-      imgAlt: 'multi-post stories project',
-      title: 'Multi-Post Stories',
-      description:
+    modalTags: ['css', 'html', 'bootstrap', 'ruby'],
+    liveLink: 'https://shyusu4.github.io/Portfolio/',
+    sourceLink: 'https://github.com/shyusu4/Portfolio',
+  },
+  {
+    id: 1,
+    img: './imgs/img-placeholder3.jpg',
+    imgAlt: 'multi-post stories project',
+    title: 'Multi-Post Stories',
+    description:
         'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy textever since the 1500s, when an unknown printer took a standard dummy text.',
-      modalTags: ['css', 'html', 'bootstrap', 'ruby'],
-      liveLink: 'https://shyusu4.github.io/Portfolio/',
-      sourceLink: 'https://github.com/shyusu4/Portfolio',
-    }
+    modalTags: ['css', 'html', 'bootstrap', 'ruby'],
+    liveLink: 'https://shyusu4.github.io/Portfolio/',
+    sourceLink: 'https://github.com/shyusu4/Portfolio',
+  }
 ];
 
 const container = document.getElementById('projects');
@@ -109,14 +64,10 @@ for (let i = 0; i < modalArr.length; i += 1){
   const projectElement = document.createElement('div');
   projectElement.classList.add('project');
   if ( i % 2 === 0) {
-  projectElement.innerHTML = `
+    projectElement.innerHTML = `
   <div class="flex-container">
   <div class="flex-item-style-1" id="flex-item-1">
-  <img
-    src="${project.img}"
-    alt="${project.imgAlt}"
-    class="my-work-img"
-  />
+  <img src="${project.img}" alt="${project.imgAlt}" class="my-work-img"/>
   <div class="project-info-1">
   <div class="project">
     <span>${project.title}</span></div>
@@ -133,9 +84,9 @@ for (let i = 0; i < modalArr.length; i += 1){
   </div>
 </div>
 </div>`;
-container.appendChild(projectElement);}
-else {
-  projectElement.innerHTML = `<div class="flex-item-style-2" id="flex-item-2">
+    container.appendChild(projectElement);}
+  else {
+    projectElement.innerHTML = `<div class="flex-item-style-2" id="flex-item-2">
   <img
     src="${project.img}"
     alt="${project.imgAlt}"
@@ -156,8 +107,8 @@ else {
     <a href="#flex-item-2" class="button">See Project</a>
   </div>
 </div>`;
-container.appendChild(projectElement);}
-};
+    container.appendChild(projectElement);}
+}
 
 const modal = document.getElementById('modal');
 const btns = document.querySelectorAll('.button');
