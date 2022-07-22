@@ -169,7 +169,7 @@ modal.addEventListener('click', () => {
 
 /* form validation */
 const form = document.querySelector('.form');
-const error = document.querySelector('.error');
+const error = document.querySelector('.email-error');
 
 form.addEventListener('submit', (e) => {
   if (form.email.value !== form.email.value.toLowerCase()) {

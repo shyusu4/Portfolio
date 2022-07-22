@@ -558,7 +558,7 @@ textarea:focus {
   border: 1px solid black;
 }
 
-.error {
+.email-error {
   display: none;
   color: crimson;
   font-size: 20px;
